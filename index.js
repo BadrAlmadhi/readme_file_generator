@@ -127,14 +127,14 @@ const questions = [
         return true;
       } else {
         console.log(
-          `Please provide credits such as documentation or anything help you with your project`
+          `Please provide credits such as documentation or anything helped you with your project`
         );
       }
     },
   },
   {
     type: 'input',
-    name: 'feature',
+    name: 'features',
     message: 'What are the features of your project?',
     validate: (featureInput) => {
       if (featureInput) {
@@ -145,6 +145,12 @@ const questions = [
         );
       }
     },
+  },
+  {
+    type: 'checkbox',
+    name: 'badges',
+    message: 'please choose from this languages to create badges:',
+    choices: ["JavaScript", "Python", "C++", "C#", "CSS", "HTML", "React"],
   }
 
 ];

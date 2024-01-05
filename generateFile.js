@@ -26,6 +26,28 @@ function renderLicenseLink(license) {
   }
 };
 
+function renderBadges(badges) {
+  switch (badges) {
+    case "JavaScript":
+      return "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E";
+    case "Python":
+      return "	https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue";
+    case "C++":
+      return "https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white";
+      case "C#":
+      return "https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white";
+    case "CSS":
+      return "	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white";
+    case "HTML":
+      return "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white";
+      case "React":
+      return "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB";
+    default:
+      // Handle cases where the license is not recognized
+      return "Invalid license";
+  }
+};
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
@@ -60,12 +82,12 @@ ${data.usage}
 ## Credits
 ${data.credits}
 
-## License
+
 ${renderLicenseSection(data.license)}
 ${renderLicenseBadge(data.license)}
 
 ## Badges
-${data.badges}
+${renderBadges(data.badges)}
 
 ## Features
 ${data.features}
