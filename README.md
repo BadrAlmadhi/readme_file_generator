@@ -37,6 +37,12 @@ To make the most of this project, follow these steps:
 
 With these straightforward steps, you'll effortlessly harness the power of this project to generate a polished README tailored to your project.
 
+## Video 
+
+The bellow video it will show users how this command line should be used to generate a README.md file.
+
+https://drive.google.com/file/d/1dTMeSSj2drs8wLEkvDZ9wU8NJrqJNY16/view?usp=sharing
+
 ## Credits 
 
 These are the sources I used to build this project:

@@ -145,14 +145,7 @@ const questions = [
         );
       }
     },
-  },
-  {
-    type: 'checkbox',
-    name: 'badges',
-    message: 'please choose from this languages to create badges:',
-    choices: ["JavaScript", "Python", "C++", "C#", "CSS", "HTML", "React"],
   }
-
 ];
 
 // TODO: Create a function to write README file
