@@ -5,6 +5,7 @@ const generateMarkdown = require("./generateFile");
 
 // TODO: Create an array of questions for user input
 const questions = [
+  // inquirer allow us to use choose the type of data we want to add such as input, list, and more
   {
     // add in readme template
     type: "input",
@@ -149,6 +150,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
+// Here we start using fs which is node.js library visit node.js fs methods to see all documentation
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data,  (err) => {
     err ? console.log(err) : console.log("README file was created successfully!")
